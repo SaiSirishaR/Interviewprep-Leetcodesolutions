@@ -8,7 +8,7 @@ class Solution:
 
 ## 2 conditions
 
-# 1. if value of element in list 1< value of element in List 2, add the element in list 1 to the new linked list and increment the element in list 1 to next position
+# 1. if value of element in list 1< value of element in List 2, add the element in list 1 to the new linked list and point towards next position in list 1. SImilarly if the l2< l1, repeat the same as before.
 
 # edge case: Check if the lists are not of the same size and add the list with additional nodes to the final list
 
