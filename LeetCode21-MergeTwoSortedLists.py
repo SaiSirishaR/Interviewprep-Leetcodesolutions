@@ -8,9 +8,9 @@ class Solution:
 
 ## 2 conditions
 
-# 1. if value of element in list 1< value of element in list 2, add the elemnet in list 1 to the new linked list and incremnet the elemnet in list 1 to next position
+# 1. if value of element in list 1< value of element in List 2, add the element in list 1 to the new linked list and increment the element in list 1 to next position
 
-# edge case: check if the lists are not of same size add the list with additonal nodes to the final list
+# edge case: Check if the lists are not of the same size and add the list with additional nodes to the final list
 
            dummy = ListNode()
            pointer = dummy
