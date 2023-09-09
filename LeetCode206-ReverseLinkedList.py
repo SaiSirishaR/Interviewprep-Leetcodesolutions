@@ -11,7 +11,7 @@ class Solution:
 
 ####array = [4,6,8,3], print(array[2])
 
-### access the nect element = cur.next
+### access the next node = [currentnode].next
 
           prev, cur = None, head
 
