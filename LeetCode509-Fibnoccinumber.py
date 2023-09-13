@@ -21,7 +21,7 @@ class Solution:
 #a=1, b =2, a+b = 1+2 = 3
 #a=2, b =3, a+b = 2+3 = 5
 
-### step 0: store the value on b in a temp variable
+### step 0: store the values of b in a temp variable
 ### step 1: adding a and b
 ###step 2: shift a and b ('b' is already shifting through step 1)
 
