@@ -3,7 +3,7 @@ class Solution:
         
 # Case 1: if left most element is less than the right most element
 # Case 2: if the mid elements is less than the previous and next element
-# Case 3: if mid+1 is > mid then right side os sorted, go to left vice versa
+# Case 3: if mid+1 [or r] is > mid then right side is sorted, go to left vice versa
 
         l ,r =0, len(nums)-1
        
@@ -21,7 +21,7 @@ class Solution:
 
              # Case 3
 
-            if nums[mid] < nums[mid+1]: 
+            if nums[mid] < nums[r]: 
                 r = mid -1
             else:
                 l = mid+1           
