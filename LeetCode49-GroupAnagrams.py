@@ -9,6 +9,4 @@ class Solution:
             sorted_charc = tuple(sorted(word))
             d[sorted_charc].append(word)
         
-        for anagrams_list in d.values():
-            group_anagram.append(anagrams_list)
-        return group_anagram
+        return d.values()
