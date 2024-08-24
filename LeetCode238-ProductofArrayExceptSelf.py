@@ -1,28 +1,20 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-
-        prefix_array = []
-        postfix_array = [0] * (len(nums))
-
-        prefix = 1
-        postfix = 1
+        f = []
+        b = [[] for i in range(len(nums))]
+        fmul = 1
+        bmul = 1
+        res = []
 
         j = len(nums)-1
-        i = 0
-        product_array = []
-
-        while i< len(nums):
-            prefix_array.append(prefix)
-            prefix *= nums[i]
-            print("j is", j)
-            postfix_array[j] = postfix
-            postfix *=nums[j]
-
-            i +=1
+        for ii in range(len(nums)):
+            f.append(fmul)
+            fmul = fmul*nums[ii]
+            b[j] = bmul
+            bmul = bmul*nums[j]
             j -=1
-
-        for i in range(0,len(nums)):
-            product_array.append(prefix_array[i] * postfix_array[i])
-        return product_array   
-       
-            
+        
+        for kk in range(len(f)):
+           res.append(f[kk]*b[kk])
+    
+        return res
